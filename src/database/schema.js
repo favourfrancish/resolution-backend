@@ -60,7 +60,7 @@ const UserSchema = new Schema(
       },
     ],
 
-    Tasks: [
+    tasks: [
       {
         year: {
           type: Number,
@@ -72,7 +72,7 @@ const UserSchema = new Schema(
           required: true,
         },
 
-        tasks: [
+        task: [
           {
             title: {
               type: String,
