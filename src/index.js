@@ -5,6 +5,8 @@ import authRoutes from "./routes/auth.js";
 import userRoutes from "./routes/user.js";
 import thoughtRoutes from "./routes/thoughts.js";
 import resolutionRoutes from "./routes/resolutions.js";
+import bibleRoutes from "./routes/bible.js";
+import favouriteRoutes from "./routes/favourites.js";
 import cors from "cors";
 import cookieParser from "cookie-parser";
 
@@ -37,3 +39,5 @@ app.use("/api/auth", authRoutes);
 app.use("/api", userRoutes);
 app.use("/api", thoughtRoutes);
 app.use("/api", resolutionRoutes);
+app.use("/api", bibleRoutes);
+app.use("/api", favouriteRoutes);
